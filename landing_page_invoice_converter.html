@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin:0; color:#1a1a1a; background:#f9fafb; }
+    h1,h2,h3 { margin:0 0 15px; }
+    p { line-height:1.6; }
+
+    header {
+      background: linear-gradient(135deg,#0a2540,#635bff);
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    header h1 { font-size:2.8em; font-weight:700; }
+    header p { font-size:1.2em; opacity:0.9; }
+
+    .btn {
+      background:white;
+      color:#635bff;
+      padding:15px 30px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      display:inline-block;
+      margin-top:25px;
+      transition:0.3s;
+    }
+
+    .btn:hover { background:#f1f1f1; }
+
+    .container { max-width:1100px; margin:auto; padding:60px 20px; }
+
+    .section { margin-bottom:70px; text-align:center; }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .card {
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .steps {
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:center;
+    }
+
+    .step {
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      width:280px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .pricing {
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 15px 30px rgba(0,0,0,0.08);
+      max-width:400px;
+      margin:auto;
+    }
+
+    .price { font-size:2em; font-weight:700; color:#635bff; }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#111;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Transformez vos factures électroniques en Excel</h1>
+  <p>Factur-X et UBL convertis automatiquement en un fichier exploitable</p>
+  <a href="#buy" class="btn">Commencer maintenant</a>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Pourquoi c’est compliqué aujourd’hui ?</h2>
+    <div class="grid">
+      <div class="card">Fichiers XML illisibles</div>
+      <div class="card">PDF Factur-X non exploitables</div>
+      <div class="card">Perte de temps en traitement manuel</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Une solution simple</h2>
+    <p>Un outil qui transforme automatiquement vos factures électroniques en Excel prêt à l’emploi.</p>
+  </div>
+
+  <div class="section">
+    <h2>Comment ça marche</h2>
+    <div class="steps">
+      <div class="step">1. Importez vos fichiers</div>
+      <div class="step">2. Cliquez sur convertir</div>
+      <div class="step">3. Téléchargez votre Excel</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Résultat</h2>
+    <div class="grid">
+      <div class="card">Avant : fichiers complexes</div>
+      <div class="card">Après : Excel clair et structuré</div>
+    </div>
+  </div>
+
+  <div class="section" id="buy">
+    <h2>Tarification</h2>
+    <div class="pricing">
+      <p class="price">99€</p>
+      <p>Licence complète + mises à jour</p>
+      <a href="https://buy.stripe.com/test" class="btn">Acheter maintenant</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Invoice Converter</p>
+</footer>
+
+</body>
+</html>
